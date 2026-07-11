@@ -27,7 +27,7 @@ body {
     padding: 1.2rem 1rem;
     position: sticky;
     top: 1.5rem;
-    border-radius: 0;
+    border-radius: 16px;
     max-height: calc(100vh - 3rem);
     overflow-y: auto;
 }
@@ -37,9 +37,11 @@ body {
 }
 .sidebar::-webkit-scrollbar-track {
     background: #242424;
+    border-radius: 8px;
 }
 .sidebar::-webkit-scrollbar-thumb {
     background: #444444;
+    border-radius: 8px;
 }
 
 .sidebar-title {
@@ -54,6 +56,78 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+/* Поиск в сайдбаре */
+.search-box {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.6rem 0.8rem 0.6rem 2.2rem;
+    background: #1a1a1a;
+    border: 2px solid #333333;
+    border-radius: 10px;
+    color: #d4d4d4;
+    font-size: 0.85rem;
+    font-family: 'Inter', sans-serif;
+    transition: border-color 0.2s ease;
+    outline: none;
+}
+
+.search-box input::placeholder {
+    color: #666666;
+}
+
+.search-box input:focus {
+    border-color: #888888;
+}
+
+.search-box .search-icon {
+    position: absolute;
+    left: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666666;
+    font-size: 0.85rem;
+}
+
+.search-box .clear-btn {
+    position: absolute;
+    right: 0.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #666666;
+    cursor: pointer;
+    font-size: 0.85rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 6px;
+    display: none;
+}
+
+.search-box .clear-btn:hover {
+    color: #aaaaaa;
+    background: #2e2e2e;
+}
+
+.search-box .clear-btn.visible {
+    display: block;
+}
+
+.search-stats {
+    font-size: 0.7rem;
+    color: #666666;
+    padding: 0.2rem 0.4rem;
+    margin-bottom: 0.5rem;
+    display: none;
+}
+
+.search-stats.visible {
+    display: block;
 }
 
 .nav-list {
@@ -73,7 +147,7 @@ body {
     font-size: 0.88rem;
     border-left: 3px solid transparent;
     transition: all 0.1s ease;
-    border-radius: 0;
+    border-radius: 8px;
 }
 
 .nav-list li a:hover {
@@ -92,6 +166,16 @@ body {
     width: 1.2rem;
     color: #888888;
     font-size: 0.9rem;
+}
+
+.nav-list li a.highlighted {
+    background: #2a2a3a;
+    border-left-color: #6a8aff;
+    color: #e8e8ff;
+}
+
+.nav-list li a.highlighted i {
+    color: #6a8aff;
 }
 
 .nav-divider {
@@ -116,7 +200,7 @@ body {
 
 .container {
     background: #242424;
-    border-radius: 0;
+    border-radius: 16px;
     box-shadow: 0 8px 32px -6px rgba(0, 0, 0, 0.8);
     padding: 2rem 2.4rem;
     border: 2px solid #333333;
@@ -136,7 +220,7 @@ body {
     background: #2e2e2e;
     width: 50px;
     height: 50px;
-    border-radius: 0;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,7 +242,7 @@ body {
     font-weight: 600;
     font-size: 0.7rem;
     padding: 0.3rem 1.2rem;
-    border-radius: 0;
+    border-radius: 20px;
     margin-left: auto;
     border: 2px solid #3d3d3d;
     letter-spacing: 0.3px;
@@ -191,7 +275,7 @@ body {
 
 .meta-block {
     background: #2a2a2a;
-    border-radius: 0;
+    border-radius: 12px;
     padding: 1rem 1.6rem;
     margin-bottom: 1.6rem;
     border: 2px solid #333333;
@@ -205,7 +289,7 @@ body {
 
 .term-block {
     background: #2a2a2a;
-    border-radius: 0;
+    border-radius: 12px;
     padding: 1rem 1.6rem;
     border: 2px solid #333333;
     margin-bottom: 1rem;
@@ -225,7 +309,7 @@ body {
 
 .rule-card {
     background: #242424;
-    border-radius: 0;
+    border-radius: 12px;
     padding: 1rem 1.6rem;
     border: 2px solid #333333;
     transition: 0.15s ease;
@@ -235,6 +319,12 @@ body {
 .rule-card:hover {
     border-color: #555555;
     background: #2a2a2a;
+}
+
+.rule-card.highlighted {
+    border-color: #6a8aff;
+    background: #2a2a3a;
+    box-shadow: 0 0 20px rgba(106, 138, 255, 0.1);
 }
 
 .rule-head {
@@ -250,7 +340,7 @@ body {
     color: #aaaaaa;
     background: #2a2a2a;
     padding: 0.05rem 0.9rem;
-    border-radius: 0;
+    border-radius: 6px;
     font-size: 0.75rem;
     letter-spacing: 0.02em;
     white-space: nowrap;
@@ -271,7 +361,7 @@ body {
 
 .rule-example {
     background: #2a2a2a;
-    border-radius: 0;
+    border-radius: 8px;
     padding: 0.6rem 1.2rem;
     margin-top: 0.6rem;
     font-size: 0.92rem;
@@ -294,7 +384,7 @@ body {
     font-weight: 600;
     font-size: 0.75rem;
     padding: 0.15rem 1rem;
-    border-radius: 0;
+    border-radius: 6px;
     margin-top: 0.5rem;
     border: 2px solid #4a3030;
 }
@@ -332,7 +422,7 @@ body {
 .warning {
     background: #2a251a;
     border-left: 6px solid #b8943a;
-    border-radius: 0;
+    border-radius: 12px;
     padding: 1rem 1.8rem;
     margin: 1.6rem 0;
     border: 2px solid #4a402a;
@@ -359,7 +449,7 @@ body {
     background: #2a2a2a;
     border: 2px solid #333333;
     padding: 1.5rem 1.8rem;
-    border-radius: 0;
+    border-radius: 12px;
 }
 
 .info-card .label {
@@ -394,6 +484,7 @@ body {
     font-family: inherit;
     margin-left: 0.5rem;
     border: 1px solid #444444;
+    border-radius: 6px;
     transition: 0.1s ease;
 }
 
@@ -424,6 +515,7 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
+    border-radius: 20px;
 }
 
 .mod-tag i {
@@ -436,6 +528,7 @@ body {
     border: 2px solid #333333;
     padding: 1rem 1.6rem;
     margin-bottom: 0.8rem;
+    border-radius: 12px;
 }
 
 .faq-item .question {
@@ -487,6 +580,7 @@ body {
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
+    border-radius: 12px;
 }
 
 .help-box i {
@@ -507,6 +601,7 @@ body {
     font-weight: 600;
     color: #aaaaaa;
     font-size: 0.85rem;
+    border-radius: 8px;
 }
 
 .help-box .channel i {
@@ -545,6 +640,25 @@ h3 i {
     color: #888888;
 }
 
+/* No results message */
+.no-results {
+    display: none;
+    text-align: center;
+    padding: 2rem;
+    color: #666666;
+    font-size: 0.95rem;
+}
+
+.no-results.visible {
+    display: block;
+}
+
+.no-results i {
+    font-size: 2rem;
+    color: #444444;
+    margin-bottom: 0.5rem;
+}
+
 @media (max-width: 900px) {
     .app-wrapper {
         grid-template-columns: 1fr;
@@ -557,6 +671,7 @@ h3 i {
         max-height: none;
         overflow-y: visible;
         padding: 1rem;
+        border-radius: 16px;
     }
 
     .nav-list {
@@ -570,6 +685,7 @@ h3 i {
         font-size: 0.8rem;
         border-left: none;
         border-bottom: 2px solid transparent;
+        border-radius: 6px;
     }
 
     .nav-list li a:hover,
@@ -592,6 +708,7 @@ h3 i {
 
     .container {
         padding: 1.4rem 1rem;
+        border-radius: 16px;
     }
 
     .header h1 {
@@ -611,6 +728,7 @@ h3 i {
 
     .rule-card {
         padding: 0.8rem 1rem;
+        border-radius: 10px;
     }
 
     .server-info-grid {
@@ -629,6 +747,10 @@ h3 i {
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .search-box input {
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 500px) {
@@ -643,6 +765,7 @@ h3 i {
 
     .info-card {
         padding: 1rem;
+        border-radius: 10px;
     }
 
     .mods-list {
@@ -652,5 +775,11 @@ h3 i {
     .mod-tag {
         font-size: 0.75rem;
         padding: 0.2rem 0.7rem;
+        border-radius: 16px;
+    }
+
+    .faq-item {
+        padding: 0.8rem 1rem;
+        border-radius: 10px;
     }
 }
