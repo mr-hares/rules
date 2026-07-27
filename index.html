@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arcanum Vanilla</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+</head>
+<body>
+
+<div class="app">
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <div class="logo-wrapper">
+                <img class="logo-img" src="./img/logo.png" alt="Arcanum Vanilla" />
+            </div>
+            <h1>Arcanum</h1>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="./index.html" class="active">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1h-2z"/></svg>
+                Главная
+            </a>
+            <a href="./meta-rules.html">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                Мета-правила
+            </a>
+            <a href="./rp-rules.html">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                RP-кодекс
+            </a>
+        </nav>
+
+        <div class="sidebar-search">
+            <label for="search">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                Поиск
+            </label>
+            <input type="text" class="search" id="search" placeholder="Введите текст..." />
+        </div>
+    </aside>
+
+    <!-- ===== CONTENT ===== -->
+    <main class="content">
+        <div class="container">
+            <div class="hero">
+                <h2>Добро пожаловать в Arcanum Vanilla</h2>
+                <p>Магический RP-сервер с уникальной атмосферой</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="cards">
+                <div class="card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                    <div class="card-content">
+                        <h3>Мета-правила <span class="badge">основа</span></h3>
+                        <p>Безопасность, читы, вандализм, RMT, конфиденциальность — основные правила сервера.</p>
+                        <a href="./meta-rules.html" class="card-link">Перейти →</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                    <div class="card-content">
+                        <h3>RP-кодекс <span class="badge">ролевая игра</span></h3>
+                        <p>Запрет на гриферство, воровство, оскорбления, порчу мира, экономические нарушения и многое другое.</p>
+                        <a href="./rp-rules.html" class="card-link">Перейти →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-note">
+                Все споры решаются внутриигровым Судом. <br>
+                Администрация не вмешивается в RP-конфликты.<br>
+                <a href="./meta-rules.html">Мета-правила</a> • <a href="./rp-rules.html">RP-кодекс</a>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="search.js"></script>
+</body>
+</html>

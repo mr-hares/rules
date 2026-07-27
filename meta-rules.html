@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мета-правила - Arcanum Vanilla</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+</head>
+<body>
+
+<div class="app">
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <div class="logo-wrapper">
+                <img class="logo-img" src="./img/logo.png" alt="Arcanum Vanilla" />
+            </div>
+            <h1>Arcanum</h1>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="./index.html">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1h-2z"/></svg>
+                Главная
+            </a>
+            <a href="./meta-rules.html" class="active">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                Мета-правила
+            </a>
+            <a href="./rp-rules.html">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                RP-кодекс
+            </a>
+        </nav>
+
+        <div class="sidebar-search">
+            <label for="search">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                Поиск
+            </label>
+            <input type="text" class="search" id="search" placeholder="Введите текст..." />
+        </div>
+    </aside>
+
+    <!-- ===== CONTENT ===== -->
+    <main class="content">
+        <div class="container">
+            <div class="title-block">
+                <h2>Мета-правила</h2>
+                <p>Основные правила сервера</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="list-rules" id="rulesContainer">
+                <div class="rule" data-rule-id="term">
+                    <div class="title">
+                        <svg class="rule-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        Терминология
+                    </div>
+                    <div class="content">
+                        <span class="bold">Вандал</span> – игрок, чьи действия направлены на умышленное причинение ущерба технической части сервера или игровому миру. Если разрушение совершено ради добычи ресурсов или в рамках войны — это не вандализм, такие споры решает Суд.
+                        <br><br>
+                        <span class="bold">RMT (Real Money Trading)</span> — торговля игровыми ценностями за реальные деньги.
+                    </div>
+                </div>
+
+                <div class="rule" data-rule-id="sec1">
+                    <div class="title">
+                        <svg class="rule-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                        Раздел 1. Безопасность и аккаунты
+                    </div>
+                    <div class="content">
+                        <span class="bold">1.1. Передача аккаунта</span> Запрещены любые действия, предоставляющие доступ к Вашему аккаунту третьим лицам.<br />
+                        <span class="punish">Наказание:</span> Перманентная блокировка.
+                        <br><br>
+                        <span class="bold">1.2. Мультиаккаунты</span> Разрешён только один аккаунт на пользователя.<br />
+                        <span class="punish">Наказание:</span> Перманентная блокировка всех аккаунтов.
+                        <br><br>
+                        <span class="bold">1.3. Коммерция (RMT)</span> Запрещена купля/продажа за реальные деньги.<br />
+                        <span class="punish">Наказание:</span> Перманентная блокировка.
+                    </div>
+                </div>
+
+                <div class="rule" data-rule-id="sec2">
+                    <div class="title">
+                        <svg class="rule-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        Раздел 2. Игровой процесс и мир
+                    </div>
+                    <div class="content">
+                        <span class="bold">2.1. Использование багов</span> Запрещено скрывать предметы, полученные в результате ошибок или багов.<br />
+                        <span class="punish">Наказание:</span> Перманентная блокировка.
+                        <br><br>
+                        <span class="bold">2.2. Вандализм (см. терминологию) и вредительство</span> Запрещены любые действия, подпадающие под определение Вандала.<br />
+                        <span class="punish">Наказание:</span> Перманентная блокировка.
+                        <br><br>
+                        <span class="bold">2.3. Ввод в заблуждение</span> Запрещён обман игроков или Администрации.<br />
+                        <span class="punish">Наказание:</span> Перманентная блокировка.
+                        <br><br>
+                        <span class="bold">2.4. Уход от RP</span> Запрещено намеренное прерывание RP-ситуации любым способом, который делает невозможным её логическое завершение.<br />
+                        <span class="punish">Наказание:</span> Перманентная блокировка.
+                    </div>
+                </div>
+
+                <div class="rule" data-rule-id="sec3">
+                    <div class="title">
+                        <svg class="rule-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        Раздел 3. Взаимодействие и конфиденциальность
+                    </div>
+                    <div class="content">
+                        <span class="bold">3.1. Игровые конфликты</span> Личные неприязненные отношения, возникающие в ходе игры (оскорбления, не затрагивающие пункты 3.2, провокации), модерируются игроками самостоятельно или через внутриигровой Суд. Администрация в эти процессы не вмешивается.
+                        <br><br>
+                        <span class="bold">3.2. Грубые нарушения</span> Запрещены расизм, национализм, политическая агитация, оскорбление родных, пропаганда наркотиков и NSFW. За данные нарушения Администрация карает немедленно, независимо от «роли» игрока.
+                        <br><br>
+                        <span class="bold">3.3. Голосовые каналы</span> В Discord-каналах и внутриигровом ГС (если есть) запрещено намеренное создание помех (крики, звуковые панели) и токсичное поведение, выходящее за рамки игрового процесса.
+                        <br><br>
+                        <span class="bold">3.4. Реклама</span> Запрещён пиар сторонних ресурсов.<br />
+                        <span class="punish">Наказание:</span> Перманентная блокировка.
+                        <br><br>
+                        <span class="bold">3.5. Конфиденциальность и личная безопасность</span> Запрещено распространение личной информации (ФИО, номера телефонов, адреса проживания, ссылки на личные профили в соцсетях, личные фотографии и др.) участников проекта и Администрации без их явного согласия. Запрещено любое вмешательство в личную жизнь и преследование вне игровых платформ.<br />
+                        <span class="punish">Наказание:</span> Перманентная блокировка.
+                    </div>
+                </div>
+
+                <div class="rule" data-rule-id="sec4">
+                    <div class="title">
+                        <svg class="rule-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                        Раздел 4. Модификации и читы
+                    </div>
+                    <div class="content">
+                        <span class="bold">4.1. Общие положения стороннего ПО</span> Запрещено использование или хранение любых читов, программ, ресурспаков и других средств, предоставляющих игровое преимущество. Отказ от проверки или любые попытки уклониться от неё расцениваются как использование читов.<br />
+                        <span class="punish">Наказание:</span> Перманентная блокировка.
+                        <br><br>
+                        <span class="bold">4.2. Нюанс в использовании EmoteCraft</span> Запрещено использование эмоций EmoteCraft, вводящих в заблуждение (невидимость, изменение размера более 2-х блоков).<br />
+                        <span class="punish">Наказание:</span> Блокировка на 14 дней.
+                    </div>
+                </div>
+
+                <div class="rule" data-rule-id="sec5">
+                    <div class="title">
+                        <svg class="rule-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0z"/><path d="M12 8v4l3 3"/></svg>
+                        Раздел 5. Откат инвентарей и территорий
+                    </div>
+                    <div class="content">
+                        <span class="bold">5.1.</span> Имущество и территории, пострадавшие от действий <span class="bold">Вандала (см. терминологию)</span>, будут возвращены или восстановлены Администрацией только после его перманентной блокировки.
+                        <br><br>
+                        <span class="bold">5.2.</span> Игрок может избежать блокировки, если нарушение будет признано решаемым через внутриигровой Суд (например, если нарушитель полностью возместит ущерб пострадавшему и выплатит штраф).
+                        <br><br>
+                        <span class="bold">5.3.</span> Потеря вещей после смерти
+                        <br><br>
+                        <span class="bold">5.4.</span> Потерянные после смерти вещи не возвращаются, если смерть произошла по вине игрока (например, падение в лаву, смерть от моба).
+                        <br><br>
+                        <span class="bold">5.5.</span> Если смерть произошла из-за ошибки (бага) сервера, для возврата предметов обязательно предоставление видеодоказательств. Без них откат невозможен.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="search.js"></script>
+</body>
+</html>

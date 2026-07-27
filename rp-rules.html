@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RP-кодекс - Arcanum Vanilla</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+</head>
+<body>
+
+<div class="app">
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <div class="logo-wrapper">
+                <img class="logo-img" src="./img/logo.png" alt="Arcanum Vanilla" />
+            </div>
+            <h1>Arcanum</h1>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="./index.html">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1h-2z"/></svg>
+                Главная
+            </a>
+            <a href="./meta-rules.html">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                Мета-правила
+            </a>
+            <a href="./rp-rules.html" class="active">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                RP-кодекс
+            </a>
+        </nav>
+
+        <div class="sidebar-search">
+            <label for="search">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                Поиск
+            </label>
+            <input type="text" class="search" id="search" placeholder="Введите текст..." />
+        </div>
+    </aside>
+
+    <!-- ===== CONTENT ===== -->
+    <main class="content">
+        <div class="container">
+            <div class="title-block">
+                <h2>RP-кодекс</h2>
+                <p>Основные правила RP</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="list-rules" id="rulesContainer">
+                <div class="rule warning" data-rule-id="pred">
+                    <div class="title warning-title">
+                        <svg class="rule-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        Важное предупреждение
+                    </div>
+                    <div class="content">
+                        За нарушение RP-правил проекта наказания не могут выдаваться Администрацией. Правила носят обобщённый характер. Каждая спорная ситуация или конфликт решается через внутриигровой Суд.
+                    </div>
+                </div>
+
+                <div class="rule" data-rule-id="sec1">
+                    <div class="title">
+                        <svg class="rule-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+                        Статья №1
+                    </div>
+                    <div class="content">
+                        Запрещено гриферство, убийство игроков и мобов на чужих территориях, разрушение чужих построек, воровство из любых блоков, которые могут хранить ресурсы, даже если они находятся на спавне, подбирание чужих ресурсов с целью забрать их себе, кидание бан-шалкеров и постройка чанк-банов, вызов рейда на чужую территорию, поломка порталов и прочее.
+                    </div>
+                </div>
+
+                <div class="rule" data-rule-id="sec2">
+                    <div class="title">
+                        <svg class="rule-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+                        Статья №2
+                    </div>
+                    <div class="content">
+                        Запрещена порча внешнего вида Верхнего Мира: неклюжие постройки из неподходящих блоков, дыры от криперов, тнт-машины, недорубленные деревья и другие действия, портящие внешний вид Верхнего Мира.
+                    </div>
+                </div>
+
+                <div class="rule" data-rule-id="sec3">
+                    <div class="title">
+                        <svg class="rule-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+                        Статья №3
+                    </div>
+                    <div class="content">
+                        Запрещено нанесение вреда экономической системе сервера, включая организацию и проведение безвозмездной передачи ценных ресурсов игрокам.
+                    </div>
+                </div>
+
+                <div class="rule" data-rule-id="sec4">
+                    <div class="title">
+                        <svg class="rule-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+                        Статья №4
+                    </div>
+                    <div class="content">
+                        Запрещено нарушение общественной безопасности в общественных местах. Нужно выбирать нейтральные или специализированные для PVP или прочих видов сражений места.
+                    </div>
+                </div>
+
+                <div class="rule" data-rule-id="sec5">
+                    <div class="title">
+                        <svg class="rule-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+                        Статья №5
+                    </div>
+                    <div class="content">
+                        Запрещена неуплата штрафа / налога.
+                    </div>
+                </div>
+
+                <div class="rule" data-rule-id="sec6">
+                    <div class="title">
+                        <svg class="rule-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+                        Статья №6
+                    </div>
+                    <div class="content">
+                        Запрещено нарушение общественных норм порядка в общественных местах.
+                    </div>
+                </div>
+
+                <div class="rule" data-rule-id="sec7">
+                    <div class="title">
+                        <svg class="rule-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+                        Статья №7
+                    </div>
+                    <div class="content">
+                        Запрещены любые формы неуважительного поведения, включая оскорбления, насмешки, издевки, провокации, токсицизм, расизм, национализм, оскорбления по расовому/национальному признаку, а также призывы к действиям, нарушающим правила. Запрещены NSFW, жесть, политика и любой другой негативный, противоречивый или спорный контент, который может кого-то оскорбить.
+                    </div>
+                </div>
+
+                <div class="rule" data-rule-id="sec8">
+                    <div class="title">
+                        <svg class="rule-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+                        Статья №8
+                    </div>
+                    <div class="content">
+                        Запрещена постройка в радиусе 250 блоков от нулевых координат на Спавне или в Хабе.
+                    </div>
+                </div>
+
+                <div class="rule" data-rule-id="sec9">
+                    <div class="title">
+                        <svg class="rule-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+                        Статья №9
+                    </div>
+                    <div class="content">
+                        Запрещён самосуд или его попытки на нарушение правил.
+                    </div>
+                </div>
+
+                <div class="rule" data-rule-id="sec10">
+                    <div class="title">
+                        <svg class="rule-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+                        Статья №10
+                    </div>
+                    <div class="content">
+                        Запрещён обман, ввод людей в заблуждение, использование мошеннических схем.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="search.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    --font: 'JetBrains Mono', monospace;
+    --border: oklch(45% 0 0 / 0.25);
+    --bg-deep: #1a1425;
+    --bg-panel: #221c2e;
+    --bg-rule: #2a2338;
+    --bg-rule-title: #332b44;
+    --text-main: #ece4f5;
+    --text-muted: #a896c4;
+    --accent: #916ad4;
+    --accent-hover: #a885e0;
+    --accent-dim: rgba(145, 106, 212, 0.2);
+    --radius: 8px;
+    --shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+
+    background: var(--bg-deep);
+    margin: 0;
+    padding: 24px 16px;
+    font-family: var(--font);
+    color: var(--text-main);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+a {
+    color: var(--text-main);
+    text-decoration: none;
+    transition: color 0.15s;
+}
+a:hover {
+    color: var(--accent-hover);
+}
+
+/* ===== ЗАГОЛОВКИ ===== */
+.title-block h2 {
+    margin: 6px 0 2px;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+}
+.title-block p {
+    margin: 2px 0 0;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.line {
+    border-top: 1px solid var(--border);
+    margin: 2px 0 4px;
+}
+
+/* ===== ГЛАВНАЯ (карточки) ===== */
+.hero {
+    text-align: center;
+    padding: 20px 0 10px;
+}
+.hero h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 6px;
+    background: linear-gradient(135deg, #d4c0ed, #a885e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.hero p {
+    color: var(--text-muted);
+    font-size: 15px;
+    margin: 0;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 12px 0 4px;
+}
+.card {
+    background: var(--bg-rule);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    padding: 18px 20px 20px;
+    transition: border 0.2s, background 0.2s, transform 0.15s;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+.card:hover {
+    border-color: var(--accent);
+    background: #2f2740;
+    transform: translateY(-2px);
+}
+.card-icon {
+    width: 40px;
+    height: 40px;
+    stroke: var(--accent);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+.card-content {
+    flex: 1;
+}
+.card-content h3 {
+    margin: 0 0 4px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.card-content p {
+    margin: 0 0 10px;
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.5;
+}
+.card-link {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 20px;
+    padding: 4px 16px;
+    transition: all 0.15s;
+}
+.card-link:hover {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+}
+.badge {
+    display: inline-block;
+    background: var(--accent-dim);
+    color: var(--accent-hover);
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 12px;
+    letter-spacing: 0.03em;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+.footer-note {
+    margin-top: 16px;
+    padding: 12px 0 4px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-muted);
+}
+.footer-note a {
+    color: var(--accent-hover);
+}
+
+/* ===== ПРАВИЛА ===== */
+.list-rules {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+.rule {
+    background: var(--bg-rule);
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid transparent;
+    transition: border 0.15s, background 0.15s;
+}
+.rule:hover {
+    border-color: var(--border);
+    background: #2f2740;
+}
+
+.rule .title {
+    background: var(--bg-rule-title);
+    padding: 8px 14px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.rule .content {
+    padding: 10px 14px 12px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.rule-icon {
+    width: 18px;
+    height: 18px;
+    stroke: var(--accent);
+    flex-shrink: 0;
+}
+
+.bold {
+    font-weight: 600;
+    color: #d4c0ed;
+}
+.punish {
+    color: #e07a7a;
+    font-weight: 500;
+}
+
+/* предупреждение в RP */
+.rule.warning {
+    border-color: var(--accent);
+    background: #2a1f3a;
+}
+.warning-title {
+    background: var(--accent) !important;
+    color: #fff !important;
+    font-weight: 600;
+}
+.warning-title .rule-icon {
+    stroke: #fff;
+}
+
+/* скрытие при поиске */
+.rule-hidden {
+    display: none !important;
+}
+
+/* подсветка */
+.highlight {
+    background-color: var(--accent);
+    color: #fff;
+    padding: 0 3px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+/* ===== АДАПТИВ ===== */
+@media (max-width: 500px) {
+    .container {
+        padding: 16px !important;
+    }
+    .hero h2 {
+        font-size: 22px;
+    }
+    .card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .card-icon {
+        width: 32px;
+        height: 32px;
+    }
+}
